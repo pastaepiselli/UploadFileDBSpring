@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: uploadFileDB
+  jpa:
+    database: ORACLE
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    url: jdbc:oracle:thin:@192.168.1.32:1521:XE
+    username: salva_files
+    password: files
+    driverClassName: oracle.jdbc.OracleDriver
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
